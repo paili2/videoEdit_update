@@ -14,8 +14,17 @@ export default function AboutPage() {
             정서령 · Seoryeong
           </h1>
 
-          {/* 기본 소개 */}
-          <p className="max-w-5xl text-sm text-white/70 md:text-base">
+          {/* 모바일: 쭉 이어지는 한 문장 */}
+          <p className="block text-[12px] leading-relaxed text-white/70 md:hidden">
+            감정선과 리듬, 장면의 흐름을 세밀하게 바라보는 영상 편집자
+            정서령입니다. 화면 구조와 스토리 전개를 함께 고민하며, 단순한 컷
+            나열이 아니라 시청자가 끝까지 몰입할 수 있는
+            <span className="text-white">영상 전체의 흐름</span>을 설계하는
+            편집을 지향합니다.
+          </p>
+
+          {/* 데스크탑: 고정 줄바꿈 */}
+          <p className="hidden max-w-5xl text-sm text-white/70 md:block md:text-base">
             감정선과 리듬, 장면의 흐름을 세밀하게 바라보는 영상 편집자
             정서령입니다.
             <br />
@@ -27,7 +36,7 @@ export default function AboutPage() {
           </p>
 
           {/* 다짐 문장 */}
-          <p className="max-w-5xl text-sm text-amber-200 md:text-sm">
+          <p className="max-w-5xl text-[12px] text-amber-200 md:text-sm">
             아직 포트폴리오는 충분하지 않지만, 믿고 맡겨주시는 영상 한 편 한
             편이 제 역량과 가능성을 보여주는 작품이 될 수 있도록 최선을 다해
             편집하겠습니다.
@@ -39,12 +48,10 @@ export default function AboutPage() {
           <div className="space-y-6 rounded-2xl border border-white/10 bg-white/5 p-5">
             <div>
               <h2 className="text-sm font-semibold text-white/90">작업/경험</h2>
-              <ul className="mt-2 space-y-2 text-sm text-white/70">
+              <ul className="mt-2 space-y-2 text-[11px] text-white/70 md:text-sm">
                 <li>· 개인 유튜브 채널 운영 경험</li>
                 <li>· 브이로그·여행·일상 기록 기반 콘텐츠 제작 및 편집</li>
-                <li>· 지인 채널의 인터뷰·정보형 영상 편집 참여 경험</li>
-                <li>· 숏폼(릴스/쇼츠)용 클립 제작 및 간단한 SNS 영상 디자인</li>
-                <li>· 포트폴리오용 쇼릴 및 영상 패키지 제작</li>
+                <li>· 숏폼(릴스/쇼츠)용 클립 제작</li>
               </ul>
             </div>
 
@@ -60,7 +67,7 @@ export default function AboutPage() {
                   </span>
                 ))}
               </div>
-              <p className="mt-2 text-xs text-white/50">
+              <p className="mt-2 text-[11px] md:text-xs text-white/50">
                 이 외 필요한 툴은 빠르게 습득해 프로젝트에 적용할 수 있습니다.
               </p>
             </div>
@@ -87,7 +94,7 @@ export default function AboutPage() {
               <h2 className="text-sm font-semibold text-white/90">
                 편집 스타일
               </h2>
-              <ul className="mt-2 space-y-2 text-sm text-white/70">
+              <ul className="mt-2 space-y-2 text-[11px] md:text-xs text-white/70">
                 <li>· 말/비트에 맞춘 리듬감 있는 컷 편집</li>
                 <li>
                   · 감정선·리듬·장면 연결을 세밀하게 다듬어 몰입감 있는 흐름
@@ -106,11 +113,11 @@ export default function AboutPage() {
               <h2 className="text-sm font-semibold text-white/90">
                 함께 작업하고 싶은 영상
               </h2>
-              <ul className="mt-2 space-y-2 text-sm text-white/70">
+              <ul className="mt-2 space-y-2 text-[11px] md:text-xs text-white/70">
                 <li>· 브이로그/라이프스타일 채널</li>
                 <li>· 공부/기록/아카이브 성격의 채널</li>
                 <li>· 브랜드 스토리를 담고 싶은 소상공인</li>
-                <li>· 게임/취미 관련 크리에이터</li>
+                <li>· 취미 관련 크리에이터</li>
               </ul>
             </div>
           </div>
