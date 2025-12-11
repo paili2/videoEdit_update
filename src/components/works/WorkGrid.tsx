@@ -1,4 +1,4 @@
-import { WorkItem } from "@/src/data/works";
+import { WorkItem } from "@/src/types/works.type";
 import WorkCard from "./WorkCard";
 
 type Props = {

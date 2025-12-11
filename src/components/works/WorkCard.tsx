@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { WorkItem } from "@/src/data/works";
+import { WorkItem } from "@/src/types/works.type";
 
 type Props = {
   work: WorkItem;
