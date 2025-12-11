@@ -22,12 +22,16 @@ export default function RootLayout({
           <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-gradient-to-tr from-indigo-500 via-blue-500 to-teal-400" />
         </div>
 
-        {/* 페이지 전체는 full width */}
-        <div className="relative z-10 flex min-h-screen flex-col w-full">
+        {/* 전체 페이지 래퍼 */}
+        <div className="relative z-10 flex min-h-screen w-full flex-col">
           <Header />
 
-          {/* 본문만 max-w 적용 */}
-          <main className="flex-1 w-full">{children}</main>
+          {/* 컨텐츠 공통 컨테이너: 여기서만 max-width 관리 */}
+          <main className="flex-1 w-full">
+            <div className="mx-auto w-full max-w-6xl px-6 pb-20 pt-10 md:pt-16">
+              {children}
+            </div>
+          </main>
 
           <Footer />
         </div>
