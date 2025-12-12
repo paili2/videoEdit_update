@@ -85,7 +85,37 @@ export const WORKS: WorkItem[] = [
         likes: "",
       },
     ],
-  }, // ⭐ 6. 흔한남매 편집 테스트 영상
+  },
+
+  // ⭐ 애견카페 브이로그 – 롱폼
+  {
+    slug: "vlog-dog-cafe",
+    title: "애견카페 브이로그",
+    category: "VLOG",
+    thumbnailUrl: "https://img.youtube.com/vi/NZs0WkAmhPA/maxresdefault.jpg",
+    youtubeUrl: "https://youtu.be/NZs0WkAmhPA",
+    role: "촬영 · 편집",
+    year: "2022",
+    kind: "long",
+    videos: [
+      {
+        title: "본편",
+        youtubeUrl: "https://youtu.be/NZs0WkAmhPA",
+        description:
+          "강아지와 함께 애견카페를 방문해 촬영한 가벼운 브이로그입니다. 특별한 기획 없이 현장에서 자연스럽게 담은 사진과 영상을 조합해, 반려견과 공간 분위기를 중심으로 편안한 감성의 영상으로 구성했습니다.",
+        bullets: [
+          "기획 없이 자연스럽게 촬영한 일상 브이로그",
+          "반려견의 행동과 공간 분위기 중심의 구성",
+          "사진·영상 조합으로 편안한 톤 연출",
+          "과한 효과 없이 흐름에 맞춘 자연스러운 편집",
+        ],
+        views: "",
+        likes: "",
+      },
+    ],
+  },
+
+  // 흔한남매 편집 테스트 영상
   {
     slug: "edit-test-nyaha",
     title: "흔한남매 - 지원 영상",
