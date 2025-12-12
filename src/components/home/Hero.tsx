@@ -33,25 +33,34 @@ export default function Hero() {
       </div>
 
       {/* 오른쪽 미니 쇼릴 → 펭수빵 영상 카드 */}
-      <div className="relative h-52 overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-tr from-purple-600/60 via-indigo-700/80 to-black/60 shadow-2xl md:h-64">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_0%,rgba(255,255,255,0.16),transparent_55%),radial-gradient(circle_at_90%_100%,rgba(56,189,248,0.35),transparent_55%)]" />
+      <div className="relative h-52 overflow-hidden rounded-3xl border border-white/10 shadow-2xl md:h-64">
+        {/* 카드 배경에 썸네일 삽입 */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage:
+              "url('https://img.youtube.com/vi/EGkK9KsFKiw/hqdefault.jpg')",
+          }}
+        />
 
+        {/* 썸네일 위에 그라데이션 오버레이 */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+
+        {/* 내용 */}
         <div className="relative flex h-full flex-col justify-between p-5">
           <div>
-            <p className="text-xs uppercase tracking-[0.18em] text-white/60">
+            <p className="text-xs uppercase tracking-[0.18em] text-white/70">
               entertainment
             </p>
             <p className="mt-2 text-lg font-semibold">펭수빵 리액션 콘텐츠</p>
           </div>
 
-          <div className="flex items-end justify-between text-xs text-white/70">
-            <span>YouTube VLOG · 2020</span>
+          <div className="flex items-end justify-between text-xs text-white/80">
+            <span>YouTube · 2020</span>
 
             <a
               href="/featured"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-full bg-black/40 px-3 py-1 text-[11px] transition hover:bg-black/60"
+              className="rounded-full bg-black/50 px-3 py-1 text-[11px] transition hover:bg-black/70"
             >
               ▶ 영상보기
             </a>
