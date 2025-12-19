@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useRef } from "react";
+import { MouseEvent, useRef } from "react";
 import { FEATURED_WORKS } from "@/src/data/featured_works";
 import Link from "next/link";
+import StatsSection from "./StatsSection";
+import SectionTitle from "../layout/SectionTitle";
 
 export default function FeaturedStrip() {
   const scrollRef = useRef<HTMLDivElement | null>(null);
@@ -11,7 +13,7 @@ export default function FeaturedStrip() {
   const scrollStart = useRef(0);
   const dragged = useRef(false);
 
-  const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseDown = (e: MouseEvent<HTMLDivElement>) => {
     if (!scrollRef.current) return;
     // 왼쪽 버튼만
     if (e.button !== 0) return;
@@ -34,7 +36,7 @@ export default function FeaturedStrip() {
     }, 0);
   };
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+  const handleMouseMove = (e: MouseEvent<HTMLDivElement>) => {
     if (!isDragging.current || !scrollRef.current) return;
     e.preventDefault();
 
@@ -48,7 +50,7 @@ export default function FeaturedStrip() {
     scrollRef.current.scrollLeft = scrollStart.current - delta;
   };
 
-  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleLinkClick = (e: MouseEvent<HTMLAnchorElement>) => {
     // 방금까지 드래그 중이었다면 클릭으로 페이지 이동하지 않기
     if (dragged.current) {
       e.preventDefault();
@@ -59,13 +61,12 @@ export default function FeaturedStrip() {
   return (
     <section className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold">대표 작업 한눈에 보기</h2>
+        <SectionTitle>대표 작업 한눈에 보기</SectionTitle>
       </div>
 
       <div className="relative">
         {/* 모바일에서만 좌우 페이드 표시 */}
         <div className="pointer-events-none absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#050014] to-transparent md:hidden" />
-        <div className="pointer-events-none absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#050014] to-transparent md:hidden" />
 
         {/* 한 줄 + 가로 슬라이드 (스크롤바 숨김) */}
         <div

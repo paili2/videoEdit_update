@@ -17,13 +17,16 @@ export default function Header() {
           </div>
         </Link>
 
-        {/* 메뉴: 모바일 + 데스크탑 모두 표시 */}
+        {/* 메뉴 */}
         <nav className="flex items-center gap-6 text-xs font-medium text-white/70">
           <Link href="/about" className="hover:text-white">
             소개
           </Link>
           <Link href="/works" className="hover:text-white">
-            포트폴리오
+            영상
+          </Link>
+          <Link href="/thumbnails" className="hover:text-white">
+            썸네일
           </Link>
         </nav>
       </div>
