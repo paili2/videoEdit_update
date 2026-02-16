@@ -88,60 +88,60 @@ export const WORKS: WorkItem[] = [
   },
 
   // 흔한남매 편집 테스트 영상
-  {
-    slug: "edit-test-nyaha",
-    title: "흔한남매 - 지원 영상",
-    category: "EDIT TEST",
-    thumbnailUrl: "https://img.youtube.com/vi/hSgeooN0f0I/hqdefault.jpg", // 필요하면 이미지 생성 가능
-    youtubeUrl: "https://youtu.be/hSgeooN0f0I", // 비공개면 공란 또는 구글드라이브 링크
-    role: "편집",
-    year: "2020",
-    kind: "long",
-    videos: [
-      {
-        title: "테스트 편집본",
-        youtubeUrl: "https://youtu.be/hSgeooN0f0I/maxresdefault.jpg", // 비공개 링크 사용 권장
-        description:
-          "유튜브 채널 ‘흔한남매’ 편집자 지원 테스트를 위해 제작한 샘플 편집 영상입니다. 원본 톤에 맞춘 컷 구성, 리듬 편집, 타이포그래피 등을 중심으로 역량을 보여주기 위해 제작했습니다. 상업적 목적 없이 포트폴리오 검토용으로만 사용됩니다.",
-        bullets: [
-          "원본 톤에 맞춘 코믹 편집 구성",
-          "컷 분배·리듬 편집 중심의 구조 설계",
-          "타이포그래피·효과 활용으로 재미 요소 강화",
-          "비공개 테스트 영상 — 포트폴리오 제출용",
-        ],
-        views: "",
-        likes: "",
-      },
-    ],
-  },
+  // {
+  //   slug: "edit-test-nyaha",
+  //   title: "흔한남매 - 지원 영상",
+  //   category: "EDIT TEST",
+  //   thumbnailUrl: "https://img.youtube.com/vi/hSgeooN0f0I/hqdefault.jpg", // 필요하면 이미지 생성 가능
+  //   youtubeUrl: "https://youtu.be/hSgeooN0f0I", // 비공개면 공란 또는 구글드라이브 링크
+  //   role: "편집",
+  //   year: "2020",
+  //   kind: "long",
+  //   videos: [
+  //     {
+  //       title: "테스트 편집본",
+  //       youtubeUrl: "https://youtu.be/hSgeooN0f0I/maxresdefault.jpg", // 비공개 링크 사용 권장
+  //       description:
+  //         "유튜브 채널 ‘흔한남매’ 편집자 지원 테스트를 위해 제작한 샘플 편집 영상입니다. 원본 톤에 맞춘 컷 구성, 리듬 편집, 타이포그래피 등을 중심으로 역량을 보여주기 위해 제작했습니다. 상업적 목적 없이 포트폴리오 검토용으로만 사용됩니다.",
+  //       bullets: [
+  //         "원본 톤에 맞춘 코믹 편집 구성",
+  //         "컷 분배·리듬 편집 중심의 구조 설계",
+  //         "타이포그래피·효과 활용으로 재미 요소 강화",
+  //         "비공개 테스트 영상 — 포트폴리오 제출용",
+  //       ],
+  //       views: "",
+  //       likes: "",
+  //     },
+  //   ],
+  // },
 
-  // ⭐ 7. 도둑 으뜸이 편집 테스트 영상
-  {
-    slug: "edit-test-euddeum",
-    title: "흔한남매 - 편집 영상",
-    category: "EDIT TEST",
-    thumbnailUrl: "https://img.youtube.com/vi/hr48QjYiczU/maxresdefault.jpg",
-    youtubeUrl: "https://youtu.be/hr48QjYiczU",
-    role: "편집",
-    year: "2021",
-    kind: "long",
-    videos: [
-      {
-        title: "테스트 편집본",
-        youtubeUrl: "https://youtu.be/hr48QjYiczU",
-        description:
-          "유튜브 흔한남매 콘텐츠를 기반으로 제작한 편집 테스트 영상입니다. 오버액션·리액션 중심의 채널 스타일에 맞춰 컷 템포, 효과음, 자막 스타일을 적용해 재미 요소를 강화했습니다. 원본 저작권은 해당 채널에 있으며, 본 영상은 편집 역량 확인용 포트폴리오용으로만 사용됩니다.",
-        bullets: [
-          "오버액션·리액션 중심 채널 스타일에 맞춘 편집",
-          "효과음·자막 스타일로 코믹 요소 강화",
-          "속도 조절·컷 전환 중심의 템포 편집",
-          "비공개 테스트 영상 — 포트폴리오 제출용",
-        ],
-        views: "",
-        likes: "",
-      },
-    ],
-  },
+  // // ⭐ 7. 도둑 으뜸이 편집 테스트 영상
+  // {
+  //   slug: "edit-test-euddeum",
+  //   title: "흔한남매 - 편집 영상",
+  //   category: "EDIT TEST",
+  //   thumbnailUrl: "https://img.youtube.com/vi/hr48QjYiczU/maxresdefault.jpg",
+  //   youtubeUrl: "https://youtu.be/hr48QjYiczU",
+  //   role: "편집",
+  //   year: "2021",
+  //   kind: "long",
+  //   videos: [
+  //     {
+  //       title: "테스트 편집본",
+  //       youtubeUrl: "https://youtu.be/hr48QjYiczU",
+  //       description:
+  //         "유튜브 흔한남매 콘텐츠를 기반으로 제작한 편집 테스트 영상입니다. 오버액션·리액션 중심의 채널 스타일에 맞춰 컷 템포, 효과음, 자막 스타일을 적용해 재미 요소를 강화했습니다. 원본 저작권은 해당 채널에 있으며, 본 영상은 편집 역량 확인용 포트폴리오용으로만 사용됩니다.",
+  //       bullets: [
+  //         "오버액션·리액션 중심 채널 스타일에 맞춘 편집",
+  //         "효과음·자막 스타일로 코믹 요소 강화",
+  //         "속도 조절·컷 전환 중심의 템포 편집",
+  //         "비공개 테스트 영상 — 포트폴리오 제출용",
+  //       ],
+  //       views: "",
+  //       likes: "",
+  //     },
+  //   ],
+  // },
 
   // 서울무정해 – 음악 광고(롱폼)
   {
@@ -163,7 +163,7 @@ export const WORKS: WorkItem[] = [
           "음원의 리듬에 맞춘 텍스트 타이밍·전개 설계",
           "촬영 없이 텍스트 모션 중심으로 구성한 미니멀 프로모션 영상",
           "반복 템포에서도 지루하지 않도록 텍스트 움직임 패턴 최적화",
-          "썸네일 디자인은 기존 채널 측 원본을 사용했습니다",
+          "썸네일은 작업 하지 않았습니다",
         ],
         views: "",
         likes: "",
@@ -226,7 +226,7 @@ export const WORKS: WorkItem[] = [
   }, // ⭐ 애견카페 브이로그 – 롱폼
   {
     slug: "vlog-dog-cafe",
-    title: "애견카페 브이로그",
+    title: "애견카페 감성 브이로그",
     category: "VLOG",
     thumbnailUrl: "https://img.youtube.com/vi/NZs0WkAmhPA/maxresdefault.jpg",
     youtubeUrl: "https://youtu.be/NZs0WkAmhPA",
@@ -295,30 +295,30 @@ export const WORKS: WorkItem[] = [
   },
 
   // ⭐ 커피 브랜드 이미지 필름
-  {
-    slug: "coffee-brand-image-film",
-    title: "SRyeong Coffee – Brand Image Film",
-    category: "MUSIC", // 또는 BRAND / AD 등으로 새로 만들고 싶으면 변경 가능
-    thumbnailUrl: "https://img.youtube.com/vi/eN5v8WwiTJQ/hqdefault.jpg",
-    youtubeUrl: "https://youtu.be/eN5v8WwiTJQ",
-    role: "컷 편집 · 타이포그래피",
-    year: "2025",
-    kind: "long",
-    videos: [
-      {
-        title: "본편",
-        youtubeUrl: "https://youtu.be/eN5v8WwiTJQ",
-        description:
-          "Pixabay 스톡 영상을 활용해 제작한 커피 브랜드 이미지 필름입니다. 간결한 컷 편집과 자막 연출을 통해 브랜드가 전달하고자 하는 분위기와 메시지를 정리하는 데 집중했습니다.",
-        bullets: [
-          "Pixabay 스톡 영상 기반의 브랜드 이미지 필름",
-          "컷 편집과 자막 중심의 미니멀한 구성",
-          "영상 흐름과 메시지 전달에 집중한 편집",
-          "상업적 목적 없이 포트폴리오용으로 제작된 영상",
-        ],
-        views: "",
-        likes: "",
-      },
-    ],
-  },
+  // {
+  //   slug: "coffee-brand-image-film",
+  //   title: "SRyeong Coffee – Brand Image Film",
+  //   category: "MUSIC", // 또는 BRAND / AD 등으로 새로 만들고 싶으면 변경 가능
+  //   thumbnailUrl: "https://img.youtube.com/vi/eN5v8WwiTJQ/hqdefault.jpg",
+  //   youtubeUrl: "https://youtu.be/eN5v8WwiTJQ",
+  //   role: "컷 편집 · 타이포그래피",
+  //   year: "2025",
+  //   kind: "long",
+  //   videos: [
+  //     {
+  //       title: "본편",
+  //       youtubeUrl: "https://youtu.be/eN5v8WwiTJQ",
+  //       description:
+  //         "Pixabay 스톡 영상을 활용해 제작한 커피 브랜드 이미지 필름입니다. 간결한 컷 편집과 자막 연출을 통해 브랜드가 전달하고자 하는 분위기와 메시지를 정리하는 데 집중했습니다.",
+  //       bullets: [
+  //         "Pixabay 스톡 영상 기반의 브랜드 이미지 필름",
+  //         "컷 편집과 자막 중심의 미니멀한 구성",
+  //         "영상 흐름과 메시지 전달에 집중한 편집",
+  //         "상업적 목적 없이 포트폴리오용으로 제작된 영상",
+  //       ],
+  //       views: "",
+  //       likes: "",
+  //     },
+  //   ],
+  // },
 ];

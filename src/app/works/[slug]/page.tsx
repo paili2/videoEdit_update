@@ -184,9 +184,21 @@ export default function WorkDetailPage({ params }: PageProps) {
 
               {current.bullets && current.bullets.length > 0 && (
                 <ul className="whitespace-pre-line list-disc space-y-1 pl-4">
-                  {current.bullets.map((b) => (
-                    <li key={b}>{b}</li>
-                  ))}
+                  {current.bullets.map((b) => {
+                    const isNoThumbnail =
+                      b.trim() === "썸네일은 작업 하지 않았습니다";
+
+                    return (
+                      <li
+                        key={b}
+                        className={
+                          isNoThumbnail ? "text-red-400 font-semibold" : ""
+                        }
+                      >
+                        {b}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </div>
