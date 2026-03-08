@@ -88,60 +88,60 @@ export const WORKS: WorkItem[] = [
   },
 
   // 흔한남매 편집 테스트 영상
-  // {
-  //   slug: "edit-test-nyaha",
-  //   title: "흔한남매 - 지원 영상",
-  //   category: "EDIT TEST",
-  //   thumbnailUrl: "https://img.youtube.com/vi/hSgeooN0f0I/hqdefault.jpg", // 필요하면 이미지 생성 가능
-  //   youtubeUrl: "https://youtu.be/hSgeooN0f0I", // 비공개면 공란 또는 구글드라이브 링크
-  //   role: "편집",
-  //   year: "2020",
-  //   kind: "long",
-  //   videos: [
-  //     {
-  //       title: "테스트 편집본",
-  //       youtubeUrl: "https://youtu.be/hSgeooN0f0I/maxresdefault.jpg", // 비공개 링크 사용 권장
-  //       description:
-  //         "유튜브 채널 ‘흔한남매’ 편집자 지원 테스트를 위해 제작한 샘플 편집 영상입니다. 원본 톤에 맞춘 컷 구성, 리듬 편집, 타이포그래피 등을 중심으로 역량을 보여주기 위해 제작했습니다. 상업적 목적 없이 포트폴리오 검토용으로만 사용됩니다.",
-  //       bullets: [
-  //         "원본 톤에 맞춘 코믹 편집 구성",
-  //         "컷 분배·리듬 편집 중심의 구조 설계",
-  //         "타이포그래피·효과 활용으로 재미 요소 강화",
-  //         "비공개 테스트 영상 — 포트폴리오 제출용",
-  //       ],
-  //       views: "",
-  //       likes: "",
-  //     },
-  //   ],
-  // },
+  {
+    slug: "edit-test-nyaha",
+    title: "흔한남매 - 지원 영상",
+    category: "EDIT TEST",
+    thumbnailUrl: "https://img.youtube.com/vi/hSgeooN0f0I/hqdefault.jpg", // 필요하면 이미지 생성 가능
+    youtubeUrl: "https://youtu.be/hSgeooN0f0I", // 비공개면 공란 또는 구글드라이브 링크
+    role: "편집",
+    year: "2020",
+    kind: "long",
+    videos: [
+      {
+        title: "테스트 편집본",
+        youtubeUrl: "https://youtu.be/hSgeooN0f0I/maxresdefault.jpg", // 비공개 링크 사용 권장
+        description:
+          "유튜브 채널 ‘흔한남매’ 편집자 지원 테스트를 위해 제작한 샘플 편집 영상입니다. 원본 톤에 맞춘 컷 구성, 리듬 편집, 타이포그래피 등을 중심으로 역량을 보여주기 위해 제작했습니다. 상업적 목적 없이 포트폴리오 검토용으로만 사용됩니다.",
+        bullets: [
+          "원본 톤에 맞춘 코믹 편집 구성",
+          "컷 분배·리듬 편집 중심의 구조 설계",
+          "타이포그래피·효과 활용으로 재미 요소 강화",
+          "비공개 테스트 영상 — 포트폴리오 제출용",
+        ],
+        views: "",
+        likes: "",
+      },
+    ],
+  },
 
-  // // ⭐ 7. 도둑 으뜸이 편집 테스트 영상
-  // {
-  //   slug: "edit-test-euddeum",
-  //   title: "흔한남매 - 편집 영상",
-  //   category: "EDIT TEST",
-  //   thumbnailUrl: "https://img.youtube.com/vi/hr48QjYiczU/maxresdefault.jpg",
-  //   youtubeUrl: "https://youtu.be/hr48QjYiczU",
-  //   role: "편집",
-  //   year: "2021",
-  //   kind: "long",
-  //   videos: [
-  //     {
-  //       title: "테스트 편집본",
-  //       youtubeUrl: "https://youtu.be/hr48QjYiczU",
-  //       description:
-  //         "유튜브 흔한남매 콘텐츠를 기반으로 제작한 편집 테스트 영상입니다. 오버액션·리액션 중심의 채널 스타일에 맞춰 컷 템포, 효과음, 자막 스타일을 적용해 재미 요소를 강화했습니다. 원본 저작권은 해당 채널에 있으며, 본 영상은 편집 역량 확인용 포트폴리오용으로만 사용됩니다.",
-  //       bullets: [
-  //         "오버액션·리액션 중심 채널 스타일에 맞춘 편집",
-  //         "효과음·자막 스타일로 코믹 요소 강화",
-  //         "속도 조절·컷 전환 중심의 템포 편집",
-  //         "비공개 테스트 영상 — 포트폴리오 제출용",
-  //       ],
-  //       views: "",
-  //       likes: "",
-  //     },
-  //   ],
-  // },
+  // ⭐ 7. 도둑 으뜸이 편집 테스트 영상
+  {
+    slug: "edit-test-euddeum",
+    title: "흔한남매 - 편집 영상",
+    category: "EDIT TEST",
+    thumbnailUrl: "https://img.youtube.com/vi/hr48QjYiczU/maxresdefault.jpg",
+    youtubeUrl: "https://youtu.be/hr48QjYiczU",
+    role: "편집",
+    year: "2021",
+    kind: "long",
+    videos: [
+      {
+        title: "테스트 편집본",
+        youtubeUrl: "https://youtu.be/hr48QjYiczU",
+        description:
+          "유튜브 흔한남매 콘텐츠를 기반으로 제작한 편집 테스트 영상입니다. 오버액션·리액션 중심의 채널 스타일에 맞춰 컷 템포, 효과음, 자막 스타일을 적용해 재미 요소를 강화했습니다. 원본 저작권은 해당 채널에 있으며, 본 영상은 편집 역량 확인용 포트폴리오용으로만 사용됩니다.",
+        bullets: [
+          "오버액션·리액션 중심 채널 스타일에 맞춘 편집",
+          "효과음·자막 스타일로 코믹 요소 강화",
+          "속도 조절·컷 전환 중심의 템포 편집",
+          "비공개 테스트 영상 — 포트폴리오 제출용",
+        ],
+        views: "",
+        likes: "",
+      },
+    ],
+  },
 
   // 서울무정해 – 음악 광고(롱폼)
   {
@@ -294,7 +294,7 @@ export const WORKS: WorkItem[] = [
     ],
   },
 
-  // ⭐ 커피 브랜드 이미지 필름
+  // ⭐ 커피 브랜드 이미지 필름 https://youtu.be/6HaKxFF13BE
   // {
   //   slug: "coffee-brand-image-film",
   //   title: "SRyeong Coffee – Brand Image Film",
@@ -321,4 +321,33 @@ export const WORKS: WorkItem[] = [
   //     },
   //   ],
   // },
+  // ⭐ 사바나농장 편집 영상
+  // ⭐ 사바나농장 브랜딩 콘텐츠
+  {
+    slug: "savanna-farm",
+    title: "사바나농장 – 유튜브 영상제작",
+    category: "VLOG",
+    thumbnailUrl: "https://img.youtube.com/vi/6HaKxFF13BE/maxresdefault.jpg",
+    youtubeUrl: "https://youtu.be/6HaKxFF13BE",
+    role: "기획 · 촬영 · 편집",
+    year: "2026",
+    kind: "long",
+    videos: [
+      {
+        title: "본편",
+        youtubeUrl: "https://youtu.be/6HaKxFF13BE",
+        description:
+          "사바나농장을 더 많은 사람들에게 알리고 방문을 유도하기 위해 제작한 콘텐츠입니다. 아프리카 식물을 처음 접하는 사람의 시선에서 각 식물의 ‘닮은꼴’을 이야기하며 소개하는 콘셉트로 구성했습니다. 정보 전달과 재미를 동시에 전달해 농장에 대한 친근한 이미지를 만드는 것을 목표로 제작했습니다.",
+        bullets: [
+          "사장님 요구사항 기반 콘텐츠 콘셉트 기획",
+          "식물 닮은꼴 찾기 방식으로 식물 소개 및 친근감 부여",
+          "아프리카 식물을 처음 보는 관점에서 공감형 설명 구성",
+          "농장 방문 유도를 목표로 한 브랜딩 콘텐츠 제작",
+          "기획부터 촬영, 편집까지 전체 제작 과정 담당",
+        ],
+        views: "",
+        likes: "",
+      },
+    ],
+  },
 ];

@@ -5,6 +5,13 @@ export const FEATURED_WORKS = [
     tag: "VLOG",
     thumbnailUrl: "https://img.youtube.com/vi/a5SJHOZxvZo/hqdefault.jpg",
   },
+  {
+    slug: "savannah-farm-pd",
+    title: "사바나농장 영상 작업물",
+    tag: "PRODUCTION",
+    thumbnailUrl:
+      "https://i9.ytimg.com/vi_webp/6HaKxFF13BE/mqdefault.webp?v=699cecdc&sqp=CLzhs80G&rs=AOn4CLC0XW89_8ffVocD-0zBu8ALn2dEbQ", // 적절한 썸네일 경로로 수정해주세요
+  },
   // {
   //   slug: "edit-test-nyaha",
   //   title: "흔한남매 편집 테스트",
