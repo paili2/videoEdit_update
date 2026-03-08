@@ -1,10 +1,15 @@
+// 1. 현재 환경이 배포된 상태인지 확인합니다.
+const isProd = process.env.NODE_ENV === "production";
+// 2. 배포 환경일 때만 레포지토리 이름인 '/videoEdit_update'를 경로 앞에 붙여줍니다.
+const prefix = isProd ? "/videoEdit_update" : "";
+
 export const FEATURED_WORKS = [
   {
     slug: "savannah-farm-pd",
     title: "사바나농장 영상 작업물",
     tag: "PRODUCTION",
     thumbnailUrl:
-      "https://i9.ytimg.com/vi_webp/6HaKxFF13BE/mqdefault.webp?v=699cecdc&sqp=CLzhs80G&rs=AOn4CLC0XW89_8ffVocD-0zBu8ALn2dEbQ", // 적절한 썸네일 경로로 수정해주세요
+      "https://i9.ytimg.com/vi_webp/6HaKxFF13BE/mqdefault.webp?v=699cecdc&sqp=CLzhs80G&rs=AOn4CLC0XW89_8ffVocD-0zBu8ALn2dEbQ",
   },
   {
     slug: "dog-hide-and-seek",
@@ -12,7 +17,6 @@ export const FEATURED_WORKS = [
     tag: "VLOG",
     thumbnailUrl: "https://img.youtube.com/vi/a5SJHOZxvZo/hqdefault.jpg",
   },
-
   // {
   //   slug: "edit-test-nyaha",
   //   title: "흔한남매 편집 테스트",
@@ -35,7 +39,8 @@ export const FEATURED_WORKS = [
     slug: "music-ad-seoul-mujeonghae",
     title: "타이포그래피",
     tag: "MUSIC",
-    thumbnailUrl: "/seoul.png",
+    // 3. 로컬에서는 /seoul.png가 되고, 배포 시에는 /videoEdit_update/seoul.png가 됩니다.
+    thumbnailUrl: `${prefix}/seoul.png`,
   },
   {
     slug: "siren-remix-lyrics",
