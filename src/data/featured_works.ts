@@ -1,16 +1,28 @@
 // 1. 현재 환경이 배포된 상태인지 확인합니다.
 const isProd = process.env.NODE_ENV === "production";
 
-// 2. 버셀 환경인지 확인합니다. (Vercel 빌드 시 자동으로 생성되는 환경 변수 활용)
-// 브라우저 환경에서도 안전하게 인식되도록 NEXT_PUBLIC_ 접두사가 붙은 변수나 기본 VERCEL 변수를 체크합니다.
-const isVercel =
-  process.env.NEXT_PUBLIC_VERCEL === "1" || process.env.VERCEL === "1";
+/**
+ * 2. 현재 환경이 버셀(Vercel)인지 확인하는 로직 (더 강력한 버전)
+ * - 빌드 시점: process.env.VERCEL 확인
+ * - 브라우저 실행 시점: window.location.hostname에 'vercel'이 포함되어 있는지 확인
+ */
+const getIsVercel = () => {
+  if (typeof window !== "undefined") {
+    // 브라우저 환경에서 현재 주소 확인
+    return (
+      window.location.hostname.includes("vercel.app") ||
+      window.location.hostname.includes("vercel")
+    );
+  }
+  // 빌드 시점 환경 변수 확인
+  return process.env.NEXT_PUBLIC_VERCEL === "1" || process.env.VERCEL === "1";
+};
+
+const isVercel = getIsVercel();
 
 /**
  * 3. 환경별 경로(prefix) 설정
- * - 로컬 개발 환경: ""
- * - 버셀 배포 환경: "" (루트 경로 사용)
- * - 깃허브 배포 환경: "/videoEdit_update" (레포지토리 명칭 사용)
+ * - 버셀이거나 로컬이면 빈 값(""), 깃허브 페이지면 "/videoEdit_update"
  */
 const prefix = isProd ? (isVercel ? "" : "/videoEdit_update") : "";
 
@@ -27,12 +39,6 @@ export const FEATURED_WORKS = [
     tag: "VLOG",
     thumbnailUrl: "https://img.youtube.com/vi/a5SJHOZxvZo/hqdefault.jpg",
   },
-  // {
-  //   slug: "edit-test-nyaha",
-  //   title: "흔한남매 편집 테스트",
-  //   tag: "EDIT TEST",
-  //   thumbnailUrl: "https://img.youtube.com/vi/hSgeooN0f0I/hqdefault.jpg",
-  // },
   {
     slug: "shorts-convenience-1plus1-2025",
     title: "일본인 대상 한국 소개 숏폼",
@@ -49,7 +55,6 @@ export const FEATURED_WORKS = [
     slug: "music-ad-seoul-mujeonghae",
     title: "타이포그래피",
     tag: "MUSIC",
-    // 로컬/버셀에서는 /seoul.png, 깃허브에서는 /videoEdit_update/seoul.png가 됩니다.
     thumbnailUrl: `${prefix}/seoul.png`,
   },
   {
