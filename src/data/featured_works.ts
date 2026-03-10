@@ -28,7 +28,7 @@ const prefix = isProd ? (isVercel ? "" : "/videoEdit_update") : "";
 
 export const FEATURED_WORKS = [
   {
-    slug: "savannah-farm-pd",
+    slug: "savanna-farm",
     title: "사바나농장 영상 작업물",
     tag: "PRODUCTION",
     thumbnailUrl: `${prefix}/savanna.png`,
